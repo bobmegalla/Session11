@@ -1,4 +1,4 @@
-let btn = document.getElementById('btn')
+/* let btn = document.getElementById('btn')
 let div = document.getElementById('div')
 let inputs = document.getElementsByTagName('input')
 
@@ -29,4 +29,31 @@ function change() {
 
 div.style.width = localStorage.getItem('width')
 div.style.height = localStorage.getItem('height')
-div.style.backgroundColor = localStorage.getItem('background color')
+div.style.backgroundColor = localStorage.getItem('background color') */
+
+/* ==================================================== */
+
+$('button').click(function () {
+
+    let x = $('input');
+
+    let w = x.eq(0).val();
+    let h = x.eq(1).val();
+    let bg = x.eq(2).val();
+
+    $('div').css({
+
+        width : w + 'px',
+        height :h + 'px',
+        'background-color' :bg
+
+
+
+
+    })
+
+
+
+
+    
+})
